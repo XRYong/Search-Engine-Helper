@@ -36,9 +36,9 @@ def search_twitter(query, bearer_token):
 
 def main():
     google_api_key = os.getenv("GOOGLE_API_KEY")
-    google_cx = 'YOUR_GOOGLE_CX'
-    facebook_access_token = 'YOUR_FACEBOOK_ACCESS_TOKEN'
-    twitter_bearer_token = 'YOUR_TWITTER_BEARER_TOKEN'
+    google_cx = os.getenv("GOOGLE_CX_KEY")
+    facebook_access_token = os.getenv("FACEBOOK_API_KEY")
+    twitter_bearer_token = os.getenv("X_TWITTER_API_KEY")
     
     query = input("Enter search query: ")
     
