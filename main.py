@@ -1,4 +1,6 @@
 import requests
+import dotenv
+import os
 
 def search_google(query, api_key, cx):
     url = "https://www.googleapis.com/customsearch/v1"
@@ -33,7 +35,7 @@ def search_twitter(query, bearer_token):
     return response.json()
 
 def main():
-    google_api_key = 'YOUR_GOOGLE_API_KEY'
+    google_api_key = os.getenv("GOOGLE_API_KEY")
     google_cx = 'YOUR_GOOGLE_CX'
     facebook_access_token = 'YOUR_FACEBOOK_ACCESS_TOKEN'
     twitter_bearer_token = 'YOUR_TWITTER_BEARER_TOKEN'
