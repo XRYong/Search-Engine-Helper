@@ -1,4 +1,4 @@
-import JSON
+import json
 
 print("Setup Search Engine Helper")
 print("Coded by @XRYong on GitHub")
